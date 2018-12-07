@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	function ValidateForm() 
+	{
+
+		var errMsg="";
+		var errorCount=0;
+	var text = $("#text").val();
+
+	if(text==""){
+		errorCount++;
+		errMsg=errMsg+"Name is empty\n";
+
+	}
+	var email = $("#email").val();
+
+	 if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
+	 {
+	    
+	 }else
+	    errorCount++;
+	    errMsg=errMsg+"Invaid email\n";
+	}
+
+
+	if(errorCount==0){
+		// $("#myForm").submit();
+	}
+	else{
+		$("#error").html(errMsg);
+	}
+
+}
+
+</script>
+<form id="myForm" action="ecell.in/template/register/choice.php">
+	<div id="error"></div>
+	First name
+	<input id="text" type="text"/>
+	MObile Number
+	<input id=number type="Number"/>
+	Email
+	<input id="email" type="text" name='check'/>
+	<button type="button" onclick="validateForm"/>
+</form>

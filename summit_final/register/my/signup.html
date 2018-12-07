@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.login_block{
+	padding:60px;
+	background:#808080;
+	height:150px;
+    width:80px;
+    text-align: center;
+    margin:none;
+
+}
+.block{
+	padding:10px;
+	background:blue;
+	width:170px;
+	position:center;
+    text-align:left;
+    margin:none;
+}
+</style>
+</head>
+<body>
+	<script>
+
+		function formvalidate()
+		{
+			myform.submit();
+		}
+	</script>
+<div class="login_block">
+	<div class="block">
+		<form id="myform" action="ecell.in/template/register/my/signupp.php" method="POST">
+			E-Mail:
+			<input  id="email" type="email"/><br> 
+			PASSWORD:
+			<input  id="password" type="password"/>
+	        CONFIRM PASSWORD:
+			<input  id="conpassword" type="password"/>
+			<input id="login" type="submit" value="login" onclick="validateform()">
+		</form>
+	</div>
+</div>
+</body> 
