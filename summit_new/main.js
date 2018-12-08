@@ -1446,9 +1446,9 @@
    }
 
    function a() {
-    d = window.getComputedStyle(document.querySelector(u), ":before").getPropertyValue("content").replace(/"/g, ""), d !== f && (f = d, h.forEach(function(t) {
-     return t(d)
-    }))
+    // d = window.getComputedStyle(document.querySelector(u), ":before").getPropertyValue("content").replace(/"/g, ""), d !== f && (f = d, h.forEach(function(t) {
+    //  return t(d)
+    // }))
    }
 
    function l(t) {
